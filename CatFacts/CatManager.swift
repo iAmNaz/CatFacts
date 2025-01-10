@@ -13,6 +13,7 @@ enum CatFetchResult {
     case facts(CatFact?)
 }
 
+/// Responsible with loading cat objects
 class CatManager: ObservableObject {
     private let catFactsApi: CatFactsAPI
     private let catCache: CatCache
@@ -29,7 +30,7 @@ class CatManager: ObservableObject {
         self.catCache.delegate = self
     }
     
-    func preloadCats() async throws {
+    func reloadCats() async throws {
         do {
             let models = try await loadCatsAndFacts()
 
@@ -120,7 +121,7 @@ extension CatManager: CatCacheDelegate {
     func needsRefill() {
         Task {
             do {
-                try await self.preloadCats()
+                try await self.reloadCats()
             } catch {
                 //TODO: Broadcast error
             }

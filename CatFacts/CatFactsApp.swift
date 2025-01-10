@@ -20,7 +20,7 @@ struct CatFactsApp: App {
             if newPhase == .active {
                 Task {
                     do {
-                        try await catManager.preloadCats()
+                        try await catManager.reloadCats()
                     } catch {
                         //TODO: Broadcast error
                     }
