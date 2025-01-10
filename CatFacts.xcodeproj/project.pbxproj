@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45A34B722D313E42002F10C8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 45A34B712D313E42002F10C8 /* Kingfisher */; };
+		45A34B742D317971002F10C8 /* CatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A34B732D317971002F10C8 /* CatManager.swift */; };
+		45A34B772D318F91002F10C8 /* CatCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A34B762D318F91002F10C8 /* CatCache.swift */; };
+		45A34B7B2D31946E002F10C8 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 45A34B7A2D31946E002F10C8 /* Mocker */; };
+		45A34B7D2D3194AC002F10C8 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A34B7C2D3194AC002F10C8 /* Mocks.swift */; };
+		45A34B7F2D3194D6002F10C8 /* cat_facts.json in Resources */ = {isa = PBXBuildFile; fileRef = 45A34B7E2D3194D6002F10C8 /* cat_facts.json */; };
+		45A34B862D319DE5002F10C8 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A34B852D319DE5002F10C8 /* Modifiers.swift */; };
 		45B75B592D30234D0085DA70 /* CatFactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B582D30234D0085DA70 /* CatFactsApp.swift */; };
 		45B75B5B2D30234D0085DA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B5A2D30234D0085DA70 /* ContentView.swift */; };
 		45B75B5D2D30234F0085DA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B75B5C2D30234F0085DA70 /* Assets.xcassets */; };
 		45B75B602D30234F0085DA70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B75B5F2D30234F0085DA70 /* Preview Assets.xcassets */; };
-		45B75B6A2D30234F0085DA70 /* CatFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B692D30234F0085DA70 /* CatFactsTests.swift */; };
-		45B75B742D30234F0085DA70 /* CatFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B732D30234F0085DA70 /* CatFactsUITests.swift */; };
-		45B75B762D30234F0085DA70 /* CatFactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B752D30234F0085DA70 /* CatFactsUITestsLaunchTests.swift */; };
+		45B75B6A2D30234F0085DA70 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B692D30234F0085DA70 /* NetworkingTests.swift */; };
+		45B75B832D30262A0085DA70 /* CatPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B822D30262A0085DA70 /* CatPhoto.swift */; };
+		45B75B852D30283D0085DA70 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B842D30283D0085DA70 /* Networking.swift */; };
+		45B75B872D3028B60085DA70 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B862D3028B60085DA70 /* EndPoint.swift */; };
+		45B75B892D3028DD0085DA70 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 45B75B882D3028DD0085DA70 /* Config.xcconfig */; };
+		45B75B8B2D3029150085DA70 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B8A2D3029150085DA70 /* Config.swift */; };
+		45B75B8D2D3029AA0085DA70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B8C2D3029AA0085DA70 /* Extensions.swift */; };
+		45B75B8F2D3029C40085DA70 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B8E2D3029C40085DA70 /* Logging.swift */; };
+		45B75B912D302A500085DA70 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B902D302A500085DA70 /* ErrorTypes.swift */; };
+		45B75B942D30307E0085DA70 /* CatFactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B932D30307E0085DA70 /* CatFactsAPI.swift */; };
+		45B75B982D3036400085DA70 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B972D3036400085DA70 /* Stack.swift */; };
+		45B75BA02D3036F90085DA70 /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75B9F2D3036F90085DA70 /* CatFact.swift */; };
+		45B75BA22D3038330085DA70 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B75BA12D3038330085DA70 /* CatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +41,35 @@
 			remoteGlobalIDString = 45B75B542D30234D0085DA70;
 			remoteInfo = CatFacts;
 		};
-		45B75B702D30234F0085DA70 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 45B75B4D2D30234D0085DA70 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 45B75B542D30234D0085DA70;
-			remoteInfo = CatFacts;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45A34B732D317971002F10C8 /* CatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatManager.swift; sourceTree = "<group>"; };
+		45A34B762D318F91002F10C8 /* CatCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCache.swift; sourceTree = "<group>"; };
+		45A34B7C2D3194AC002F10C8 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		45A34B7E2D3194D6002F10C8 /* cat_facts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cat_facts.json; sourceTree = "<group>"; };
+		45A34B842D319D8B002F10C8 /* Charter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Charter Regular.ttf"; sourceTree = "<group>"; };
+		45A34B852D319DE5002F10C8 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		45B75B552D30234D0085DA70 /* CatFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B75B582D30234D0085DA70 /* CatFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsApp.swift; sourceTree = "<group>"; };
 		45B75B5A2D30234D0085DA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45B75B5C2D30234F0085DA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B75B5F2D30234F0085DA70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45B75B652D30234F0085DA70 /* CatFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45B75B692D30234F0085DA70 /* CatFactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsTests.swift; sourceTree = "<group>"; };
-		45B75B6F2D30234F0085DA70 /* CatFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45B75B732D30234F0085DA70 /* CatFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsUITests.swift; sourceTree = "<group>"; };
-		45B75B752D30234F0085DA70 /* CatFactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45B75B692D30234F0085DA70 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		45B75B822D30262A0085DA70 /* CatPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPhoto.swift; sourceTree = "<group>"; };
+		45B75B842D30283D0085DA70 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		45B75B862D3028B60085DA70 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		45B75B882D3028DD0085DA70 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		45B75B8A2D3029150085DA70 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		45B75B8C2D3029AA0085DA70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		45B75B8E2D3029C40085DA70 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		45B75B902D302A500085DA70 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
+		45B75B922D302C720085DA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		45B75B932D30307E0085DA70 /* CatFactsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsAPI.swift; sourceTree = "<group>"; };
+		45B75B972D3036400085DA70 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		45B75B9F2D3036F90085DA70 /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
+		45B75BA12D3038330085DA70 /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A34B722D313E42002F10C8 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,25 +85,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45B75B6C2D30234F0085DA70 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				45A34B7B2D31946E002F10C8 /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45A34B752D318ED8002F10C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45A34B782D318FB8002F10C8 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45A34B782D318FB8002F10C8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				45B75B5A2D30234D0085DA70 /* ContentView.swift */,
+				45B75BA12D3038330085DA70 /* CatView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		45A34B802D319D11002F10C8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				45A34B812D319D1E002F10C8 /* Fonts */,
+				45B75B5C2D30234F0085DA70 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		45A34B812D319D1E002F10C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45A34B842D319D8B002F10C8 /* Charter Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		45B75B4C2D30234D0085DA70 = {
 			isa = PBXGroup;
 			children = (
 				45B75B572D30234D0085DA70 /* CatFacts */,
 				45B75B682D30234F0085DA70 /* CatFactsTests */,
-				45B75B722D30234F0085DA70 /* CatFactsUITests */,
 				45B75B562D30234D0085DA70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +140,6 @@
 			children = (
 				45B75B552D30234D0085DA70 /* CatFacts.app */,
 				45B75B652D30234F0085DA70 /* CatFactsTests.xctest */,
-				45B75B6F2D30234F0085DA70 /* CatFactsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +147,18 @@
 		45B75B572D30234D0085DA70 /* CatFacts */ = {
 			isa = PBXGroup;
 			children = (
+				45B75B922D302C720085DA70 /* Info.plist */,
+				45B75B882D3028DD0085DA70 /* Config.xcconfig */,
 				45B75B582D30234D0085DA70 /* CatFactsApp.swift */,
-				45B75B5A2D30234D0085DA70 /* ContentView.swift */,
-				45B75B5C2D30234F0085DA70 /* Assets.xcassets */,
+				45A34B732D317971002F10C8 /* CatManager.swift */,
+				45A34B762D318F91002F10C8 /* CatCache.swift */,
+				45B75B9D2D30369E0085DA70 /* Common */,
+				45B75B992D3036490085DA70 /* Model */,
+				45B75B9A2D3036680085DA70 /* Networking */,
+				45B75B9B2D30367A0085DA70 /* Services */,
+				45A34B802D319D11002F10C8 /* Assets */,
+				45B75B9C2D3036910085DA70 /* Utilities */,
+				45A34B752D318ED8002F10C8 /* Views */,
 				45B75B5E2D30234F0085DA70 /* Preview Content */,
 			);
 			path = CatFacts;
@@ -113,18 +175,65 @@
 		45B75B682D30234F0085DA70 /* CatFactsTests */ = {
 			isa = PBXGroup;
 			children = (
-				45B75B692D30234F0085DA70 /* CatFactsTests.swift */,
+				45B75B692D30234F0085DA70 /* NetworkingTests.swift */,
+				45A34B7C2D3194AC002F10C8 /* Mocks.swift */,
+				45A34B7E2D3194D6002F10C8 /* cat_facts.json */,
 			);
 			path = CatFactsTests;
 			sourceTree = "<group>";
 		};
-		45B75B722D30234F0085DA70 /* CatFactsUITests */ = {
+		45B75B992D3036490085DA70 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				45B75B732D30234F0085DA70 /* CatFactsUITests.swift */,
-				45B75B752D30234F0085DA70 /* CatFactsUITestsLaunchTests.swift */,
+				45B75B972D3036400085DA70 /* Stack.swift */,
 			);
-			path = CatFactsUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45B75B9A2D3036680085DA70 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				45B75B842D30283D0085DA70 /* Networking.swift */,
+				45B75B862D3028B60085DA70 /* EndPoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		45B75B9B2D30367A0085DA70 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45B75B9E2D3036C10085DA70 /* Models */,
+				45B75B932D30307E0085DA70 /* CatFactsAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		45B75B9C2D3036910085DA70 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				45B75B8A2D3029150085DA70 /* Config.swift */,
+				45B75B8E2D3029C40085DA70 /* Logging.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		45B75B9D2D30369E0085DA70 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				45B75B902D302A500085DA70 /* ErrorTypes.swift */,
+				45A34B852D319DE5002F10C8 /* Modifiers.swift */,
+				45B75B8C2D3029AA0085DA70 /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		45B75B9E2D3036C10085DA70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45B75B822D30262A0085DA70 /* CatPhoto.swift */,
+				45B75B9F2D3036F90085DA70 /* CatFact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +252,9 @@
 			dependencies = (
 			);
 			name = CatFacts;
+			packageProductDependencies = (
+				45A34B712D313E42002F10C8 /* Kingfisher */,
+			);
 			productName = CatFacts;
 			productReference = 45B75B552D30234D0085DA70 /* CatFacts.app */;
 			productType = "com.apple.product-type.application";
@@ -161,27 +273,12 @@
 				45B75B672D30234F0085DA70 /* PBXTargetDependency */,
 			);
 			name = CatFactsTests;
+			packageProductDependencies = (
+				45A34B7A2D31946E002F10C8 /* Mocker */,
+			);
 			productName = CatFactsTests;
 			productReference = 45B75B652D30234F0085DA70 /* CatFactsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		45B75B6E2D30234F0085DA70 /* CatFactsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45B75B7F2D30234F0085DA70 /* Build configuration list for PBXNativeTarget "CatFactsUITests" */;
-			buildPhases = (
-				45B75B6B2D30234F0085DA70 /* Sources */,
-				45B75B6C2D30234F0085DA70 /* Frameworks */,
-				45B75B6D2D30234F0085DA70 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				45B75B712D30234F0085DA70 /* PBXTargetDependency */,
-			);
-			name = CatFactsUITests;
-			productName = CatFactsUITests;
-			productReference = 45B75B6F2D30234F0085DA70 /* CatFactsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -200,10 +297,6 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 45B75B542D30234D0085DA70;
 					};
-					45B75B6E2D30234F0085DA70 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 45B75B542D30234D0085DA70;
-					};
 				};
 			};
 			buildConfigurationList = 45B75B502D30234D0085DA70 /* Build configuration list for PBXProject "CatFacts" */;
@@ -215,13 +308,16 @@
 				Base,
 			);
 			mainGroup = 45B75B4C2D30234D0085DA70;
+			packageReferences = (
+				45A34B702D313E42002F10C8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				45A34B792D31946E002F10C8 /* XCRemoteSwiftPackageReference "Mocker" */,
+			);
 			productRefGroup = 45B75B562D30234D0085DA70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				45B75B542D30234D0085DA70 /* CatFacts */,
 				45B75B642D30234F0085DA70 /* CatFactsTests */,
-				45B75B6E2D30234F0085DA70 /* CatFactsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B75B602D30234F0085DA70 /* Preview Assets.xcassets in Resources */,
+				45B75B892D3028DD0085DA70 /* Config.xcconfig in Resources */,
 				45B75B5D2D30234F0085DA70 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,13 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45B75B6D2D30234F0085DA70 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				45A34B7F2D3194D6002F10C8 /* cat_facts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +349,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B75B5B2D30234D0085DA70 /* ContentView.swift in Sources */,
+				45B75B942D30307E0085DA70 /* CatFactsAPI.swift in Sources */,
+				45B75BA02D3036F90085DA70 /* CatFact.swift in Sources */,
+				45B75B832D30262A0085DA70 /* CatPhoto.swift in Sources */,
+				45B75B872D3028B60085DA70 /* EndPoint.swift in Sources */,
 				45B75B592D30234D0085DA70 /* CatFactsApp.swift in Sources */,
+				45B75B982D3036400085DA70 /* Stack.swift in Sources */,
+				45B75B912D302A500085DA70 /* ErrorTypes.swift in Sources */,
+				45B75B852D30283D0085DA70 /* Networking.swift in Sources */,
+				45B75B8B2D3029150085DA70 /* Config.swift in Sources */,
+				45A34B772D318F91002F10C8 /* CatCache.swift in Sources */,
+				45B75B8D2D3029AA0085DA70 /* Extensions.swift in Sources */,
+				45A34B862D319DE5002F10C8 /* Modifiers.swift in Sources */,
+				45B75BA22D3038330085DA70 /* CatView.swift in Sources */,
+				45A34B742D317971002F10C8 /* CatManager.swift in Sources */,
+				45B75B8F2D3029C40085DA70 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +371,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B75B6A2D30234F0085DA70 /* CatFactsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45B75B6B2D30234F0085DA70 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45B75B762D30234F0085DA70 /* CatFactsUITestsLaunchTests.swift in Sources */,
-				45B75B742D30234F0085DA70 /* CatFactsUITests.swift in Sources */,
+				45B75B6A2D30234F0085DA70 /* NetworkingTests.swift in Sources */,
+				45A34B7D2D3194AC002F10C8 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,16 +384,12 @@
 			target = 45B75B542D30234D0085DA70 /* CatFacts */;
 			targetProxy = 45B75B662D30234F0085DA70 /* PBXContainerItemProxy */;
 		};
-		45B75B712D30234F0085DA70 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 45B75B542D30234D0085DA70 /* CatFacts */;
-			targetProxy = 45B75B702D30234F0085DA70 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		45B75B772D30234F0085DA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B75B882D3028DD0085DA70 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -360,6 +453,7 @@
 		};
 		45B75B782D30234F0085DA70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B75B882D3028DD0085DA70 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -416,6 +510,7 @@
 		};
 		45B75B7A2D30234F0085DA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B75B882D3028DD0085DA70 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -424,6 +519,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CatFacts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatFacts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cat Facts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.catfacts.CatFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catfacts.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -444,6 +541,7 @@
 		};
 		45B75B7B2D30234F0085DA70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B75B882D3028DD0085DA70 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +550,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CatFacts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatFacts/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cat Facts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +562,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.catfacts.CatFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catfacts.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -508,40 +608,6 @@
 			};
 			name = Release;
 		};
-		45B75B802D30234F0085DA70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.catfacts.CatFactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatFacts;
-			};
-			name = Debug;
-		};
-		45B75B812D30234F0085DA70 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.catfacts.CatFactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatFacts;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,16 +638,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45B75B7F2D30234F0085DA70 /* Build configuration list for PBXNativeTarget "CatFactsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45B75B802D30234F0085DA70 /* Debug */,
-				45B75B812D30234F0085DA70 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45A34B702D313E42002F10C8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+		45A34B792D31946E002F10C8 /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45A34B712D313E42002F10C8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A34B702D313E42002F10C8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		45A34B7A2D31946E002F10C8 /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45A34B792D31946E002F10C8 /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45B75B4D2D30234D0085DA70 /* Project object */;
 }
