@@ -50,7 +50,6 @@
 		45A34B7E2D3194D6002F10C8 /* cat_facts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cat_facts.json; sourceTree = "<group>"; };
 		45A34B842D319D8B002F10C8 /* Charter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Charter Regular.ttf"; sourceTree = "<group>"; };
 		45A34B852D319DE5002F10C8 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
-		45A34B872D31A3FD002F10C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45B75B552D30234D0085DA70 /* CatFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B75B582D30234D0085DA70 /* CatFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsApp.swift; sourceTree = "<group>"; };
 		45B75B5A2D30234D0085DA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,7 +149,6 @@
 			children = (
 				45B75B922D302C720085DA70 /* Info.plist */,
 				45B75B882D3028DD0085DA70 /* Config.xcconfig */,
-				45A34B872D31A3FD002F10C8 /* README.md */,
 				45B75B582D30234D0085DA70 /* CatFactsApp.swift */,
 				45A34B732D317971002F10C8 /* CatManager.swift */,
 				45A34B762D318F91002F10C8 /* CatCache.swift */,
