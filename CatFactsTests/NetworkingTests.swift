@@ -39,7 +39,7 @@ final class NetworkingTests: XCTestCase {
                 switch completion {
                     case .finished:
                         break
-                    case .failure(let error):
+                case .failure(_):
                     XCTFail()
                 }
             }, receiveValue: { data in
