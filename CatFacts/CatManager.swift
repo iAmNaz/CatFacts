@@ -13,6 +13,8 @@ enum CatFetchResult {
     case facts(CatFact?)
 }
 
+let fetchLimit = 10
+
 /// Responsible with loading cat objects
 class CatManager: ObservableObject {
     private let catFactsApi: CatFactsAPI
@@ -57,7 +59,7 @@ class CatManager: ObservableObject {
         let catModels: [CatViewModel] = try await withThrowingTaskGroup(of: CatFetchResult.self) { taskGroup in
             taskGroup.addTask { [unowned self] in
                 do {
-                    guard let catPhotos = try await catFactsApi.getCatPhotos(10) else {
+                    guard let catPhotos = try await catFactsApi.getCatPhotos(fetchLimit) else {
                         return .photos([])
                     }
                     
@@ -69,7 +71,7 @@ class CatManager: ObservableObject {
             
             taskGroup.addTask { [unowned self] in
                 do {
-                    guard let catFacts = try await catFactsApi.getCatFacts(8) else {
+                    guard let catFacts = try await catFactsApi.getCatFacts(fetchLimit) else {
                         return .facts(nil)
                     }
                     
