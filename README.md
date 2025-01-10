@@ -1,3 +1,4 @@
+![](cat-facts.jpg)
 # Cat Facts
 
 A simple app to browse Cat images and Cat facts.
@@ -25,3 +26,5 @@ You can use [Mockoon](https://mockoon.com) to run a local REST API server. You c
 ## How the app works
 
 When the app launches it will preload a number of objects in the background. As soon as the app had launched completely tap the start button and the first Cat info will be displayed. To view another Cat, tap the screen. The app will keep preloading cat objects so you will have an endless Cat facts.
+
+![](cat-facts.gif)
